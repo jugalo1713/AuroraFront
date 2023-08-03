@@ -2,7 +2,10 @@ import { BackgroundImage } from "./Components/BackgroundImage"
 import BackgroundImageVessel from '../../public/container-vessel.jpg'
 import { LoginForm } from "./Components/LoginForm"
 
-
+export const metadata = {
+  title: 'Aurora - Login',
+  description: 'Login page to Aurora',
+}
 
 export default function Home() {
   return (
@@ -10,7 +13,7 @@ export default function Home() {
       <BackgroundImage 
         imgSrc={BackgroundImageVessel}
         alt={"Vessel in the sea"}
-        imgOpacity={'u-image-opacity-height'}
+        imgOpacity={'u-image-opacity-small'}
       />
       <LoginForm />
     </main>
