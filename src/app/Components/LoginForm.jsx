@@ -32,6 +32,7 @@ export const LoginForm = () => {
             .catch(function (error) {
                 console.log(error);
             });
+            var test = 'test';
     }
 
 
