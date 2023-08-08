@@ -1,11 +1,10 @@
 "use client"
 
 import { TextField } from '@mui/material'
-import React, { useEffect } from 'react'
 import Button from '@mui/material/Button';
 import axios from 'axios';
-import BeskarLogo from "../../../public/icon_beskar.png"
-import AuroraLogo from '../../../public/aurora_name_top-transparent.png'
+//import BeskarLogo from "../../public/icon_beskar.png"
+import AuroraLogo from '../../public/aurora_name_top-transparent.png'
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
 
