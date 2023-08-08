@@ -7,10 +7,10 @@ export const metadata = {
   description: 'Login page to Aurora',
 }
 
-export default function Home() {
+const Home = () => {
   return (
     <main>
-      <BackgroundImage 
+      <BackgroundImage
         imgSrc={BackgroundImageVessel}
         alt={"Vessel in the sea"}
         imgOpacity={'u-image-opacity-small'}
@@ -19,3 +19,6 @@ export default function Home() {
     </main>
   )
 }
+
+
+export default Home;

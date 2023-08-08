@@ -4,17 +4,15 @@ import { TextField } from '@mui/material'
 import React, { useEffect } from 'react'
 import Button from '@mui/material/Button';
 import axios from 'axios';
+import BeskarLogo from "../../../public/icon_beskar.png"
+import AuroraLogo from '../../../public/aurora_name_top-transparent.png'
+import Image from 'next/image';
+import { useRouter } from 'next/navigation';
+
+
 export const LoginForm = () => {
 
-
-    // useEffect(() => {
-    //     axios.get('https://localhost:7152/weatherforecast')
-    //     //axios.get('https://beskar-aurora-be.azurewebsites.net/weatherforecast')
-    //     .then(function (response) {
-    //       // handle success
-    //       console.log(response);
-    //     })
-    // }, []);
+    const router = useRouter();
 
     const handleForm = (e) => {
         e.preventDefault();
@@ -22,22 +20,24 @@ export const LoginForm = () => {
         var user = e.target.user.value;
         var password = e.target.password.value;
 
-        //const url = `https://localhost:7152/login?user=${user}&password=${password}`;
         const url = `https://beskar-aurora-be.azurewebsites.net/login?user=${user}&password=${password}`;
 
         axios.post(url)
             .then(function (response) {
-                console.log(response);
+                router.push('/first')
             })
             .catch(function (error) {
                 console.log(error);
             });
-            var test = 'test';
     }
-
 
     return (
         <div className='login-form u-center'>
+            <Image
+                src={AuroraLogo}
+                alt="Beskar Dev logo"
+                className='login-form_logo'
+            />
             <form className='login-form__form' onSubmit={(e) => { handleForm(e) }}>
                 <TextField
                     required

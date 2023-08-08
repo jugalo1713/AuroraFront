@@ -4,7 +4,7 @@
     background-color: rgba($color-white, .85);
     border-radius: 8px;
     width: 320px;
-    margin-top: 20rem;
+    margin-top: 10rem;
     text-align: center;
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -12,10 +12,17 @@
 
     &__input {
         width: 80%;
+        //font-size: inherit;
 
         &:not(:last-child) {
             margin-bottom: 2rem;
         }
+    }
+
+    &_logo {
+        max-width: 60%;
+        height: auto;
+        margin-bottom: 2rem;
     }
 
     @media (max-width:450px) {
@@ -24,7 +31,7 @@
 
         &__input {
             width: 90%;
-    
+
             &:not(:last-child) {
                 margin-bottom: 2rem;
             }
