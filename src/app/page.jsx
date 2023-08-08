@@ -1,6 +1,6 @@
-import { BackgroundImage } from "./Components/BackgroundImage"
+import { BackgroundImage } from "../Components/BackgroundImage"
 import BackgroundImageVessel from '../../public/container-vessel.jpg'
-import { LoginForm } from "./Components/LoginForm"
+import { LoginForm } from "../Components/LoginForm"
 
 export const metadata = {
   title: 'Aurora - Login',
